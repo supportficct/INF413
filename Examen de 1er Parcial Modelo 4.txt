@@ -1,0 +1,29 @@
+16) Compárense y contrástense los tratamientos de: a) sistema operativo de redes y b) sistema operativo distribuido.
+R.- a) sistema operativo de redes.- Cada computador posee su propio S. O. los usuarios conocen la diversidad de las maquinas que están en la red y para acceder a los recursos deben hacer un acceso en forma explícita a la maquina correspondiente, remota o haciéndola transferencia de los datos requeridos a la propia maquina. 
+ b) sistema operativo distribuido.- Es un sistema común, compartido por una res de computadoras, el usuario no necesita saber de las maquinas en la red, accede a los recursos remotos de la misma forma que lo hace a los recursos locales.
+
+17) Cite los beneficios de un DFS en comparación con un sistema de archivos en un sistema centralizado.
+R.- En un DFS los clientes, servidores y dispositivos de almacenamiento están dispersos entre las maquinas de un sistema distribuido, hay configuraciones en que los servidores se ejecutan en maquinas dedicadas y otras en la que una maquina puede ser tanto un servidor como un cliente.
+La medida más importante de desempeño de un DFS es el tiempo que toma satisfacer diferentes solicitudes de servicio; el desempeño de una DFS se puede ver como una inversión de la transferencia de DFS, es decir que el desempeño ideal de un DFS seria comparable al de un sistema de archivo convencional.
+
+18) Para tener un mejor desempeño en el acceso a archivos remotos es necesario el uso de caches. ¿Por qué su principal desventaja es la consistencia?
+R.- Porque, cuando hay patrones de acceso para escritura frecuente el gasto extra es considerable en termino de desempeño, trafico de red y carga del servidor.
+
+19) En la Gestión Distribuida de Procesos los métodos para la detección del interbloque son:
+i. Control Centralizado
+ii. Control jerárquico.
+iii. Control distribuido
+Explique el desempeño de ellos.
+R.- i. Control Centralizado.- Un nodo es responsable de la detección del interbloque, todos los mensajes de petición y liberación de recursos se envían a un proceso central así como al proceso que controla el recurso especifico. Este método necesita muchos mensajes y es vulnerable a fallar en el nodo central, además que puede hacer interbloqueos fantasmas.
+ii. Control jerárquico.- Los nodos se organizan en una estructura de árbol, con un nodo actuando como la raíz del árbol, cada nodo que no sea una hoja reúne información sobre la asignación de recursos de todos los nodos dependientes, esto permite detectar interbloqueos en niveles inferiores al nodo raíz.
+iii. Control distribuido.- Todos los procesos cooperan en la detección de interbloqueos en general esto significa, que deberán intercambiarse una información considerable con marcas de tiempo, esto hace que el costo sea significativo.
+
+20) Las redes de área local (LAN) utilizan los siguientes procedimientos de acceso:
+i. Acceso múltiple con detección de colisión (CSMA/CA)
+ii. Paso de señal (testigo)
+iii. Ranuras de mensaje
+Explique brevemente como funciona cada uno.
+R.- i. Acceso múltiple con detección de colisión (CSMA/CA).- Para transmitir un mensaje por un enlace, un sitio deberá escuchar para comprobar si hay otra transmisión, si el enlace está desocupado puede proceder con la transmisión en caso contrario deberá esperar y seguir escuchando hasta que el enlace este libre.
+ii. Paso de señal (testigo).- Cuando un sitio desea transmitir información debe esperar la llegada del testigo, el sitio saca al testigo al anillo y transmite su mensaje, cuando finaliza vuelve a colocar al testigo. La ventaja con paso de testigo es que el desempeño es constante.
+iii. Ranuras de mensaje.- Varias ranuras de mensaje de longitud fija circulan continuamente en el sistema. Cada ranura puede contener un mensaje de tamaño fijo e información de control. Un sitio que requiere transmitir un mensaje debe esperar la llegada de una ranura vacía, luego inserta su mensaje en la ranura con la información de control.
+Como cada ranura puede enviar mensaje de longitud fija, es posible utilizar varias ranuras.

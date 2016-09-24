@@ -1,0 +1,25 @@
+11) Explique cuál es la función y los objetivos de una red de computadoras.
+R.- Las redes de computadoras se pueden utilizar para diversos servicios, tanto para compañías como para individuos. Para las compañías, las redes de computadoras personales que utilizan servidores compartidos con frecuencia dan acceso a información corporativa.
+La función de las redes de computadoras, es compartir recursos (hardware y software), con el objetivo de facilitar la distribución de la información en un corto tiempo entre los usuarios o nodos de la red.
+
+12) ¿Por qué la mayor parte de redes WAN no emplean una topología totalmente conectadas?
+R.- Porque, al ser una red WAN los sitios se encuentran esparcidos en lugares geográficamente distantes (cientos hasta miles de kilómetros), también el costo de vincular cada uno de los sitios, con los demás sitios de la WAN, sería bastante ALTO.
+
+13) En un sistema operativo distribuido existe la opción de “migración de procesos”. Explique su funcionamiento y tres ventajas que ofrece esta opción.
+R.- La “migración de procesos” consiste en migrar los procesos grandes ó procesos que requieren mucho tiempo de procesamiento, a otros sitios del sistema. Ventajas:
+a. Compartición de carga.- La carga puede equilibrarse y así mejorar el rendimiento global no obstante se debe tener cuidado en el diseño del algoritmo para equilibrio de carga, el rendimiento tiende a empeorar con el mayor requerimiento de comunicación.
+b. Rendimiento de comunicaciones.- Una manera de bajar el corte de comunicaciones es moviendo los procesos que interactúan en forma intensiva hacia un mismo nodo, además se procesan archivos muy grandes es más ventajoso llevar el proceso hacia los datos.
+c. Disponibilidad.- Los procesos que requieren de mucho tiempo deben tener la posibilidad de moverse a otro sistema, esto a previsión de fallos o también se puede quedar en el sistema asegurándose que pueden ser reanudados.
+d. Utilización de capacidades especiales.- Un proceso podría requerir de algunas capacidades especiales que son disponibles en otro nodo.
+
+14) ¿Cuáles son los beneficios e inconvenientes que implica la “replicación” de archivos en un DFS?
+- Con la redundancia útil, mejorara la disponibilidad, el requisito básico es la réplica de un mismo archivo, resida en maquinas independientes a cuanto fallo. La existencia de replica debe ser invisible para los niveles superiores, no obstantes las replicas se deben distinguir entre sí con nombres de bajo nivel distintos.
+- El principal inconveniente de las replicas es la actualización, hay que conservar la semántica de consistencia pertinente, cuando los accesos a replicas se tratan como acceso virtuales a los archivos. Si la consistencia no es de mayor importancia se puede sacrificar a favor de la disponibilidad y desempeño.
+
+15) Compare el uso de cachés y el servicio remoto (RPC), en relación a:
+a) Tráfico de red.
+b) Capacidad de memoria y disco.
+R.- a) Tráfico de red.
+       - La principal ventaja de caches, es la consistencia cuando hay patrones de acceso para escritura poco frecuente, es preferible el uso de cache; pero con escritura frecuente el gasto extra es considerable en termino de desempeño, tráfico y carga del servidor.
+b) Capacidad de memoria y disco.
+      - Para que el uso de cache sea preferible, se debe tener disco locales de gran capacidad y memorias principales grandes o de lo contrario conviene el método de servicio remoto.

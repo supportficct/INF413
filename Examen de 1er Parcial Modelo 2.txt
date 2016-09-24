@@ -1,0 +1,37 @@
+6) Cite las principales diferencias entre WAN y una LAN.
+R.- WAN (Red de Area extensa)
+- Pueden conectarse desde mainframes hasta laptos.
+- El acceso es lento.
+- Acceso poco confiable.
+- Conectadas atreves de líneas telefónicas, microondas.
+- Velocidad desde 1200 bits hasta 1 Mb
+	LAN (Red de Area Local)
+- Se pueden conectar desde macro computadoras hasta laptops.
+- El acceso es rápido, menor tase de error.
+- Se conecta a través de fibra óptica, par trenzado, cable coaxial.
+- La configuración más usuales; bus multiacceso, anillo, estrella.
+- Velocidad desde 1 Megabit hasta 1Gigabit
+
+7) Una alternativa para la exclusión mutua en un DFS es el “Enfoque de paso de testigo”. Explique su funcionamiento.
+R.- Enfoque de paso de Testigo.- Cuando un proceso quiere entrar a su sección critica tiene que pedir permiso al testigo, 
+saca al testigo de la cola y puede entrar a su sección critica, cuando termina devuelve el testigo a la cola para que otro proceso lo tome.
+
+8) ¿Cuándo un sistema multiprocesador es: a) Fuertemente acoplado, b) Débilmente acoplado?
+R.- a) Fuertemente acoplado.- Cuando cada uno de los procesos del sistema multiprocesador, depende de todos los demás procesos del Sistema multiprocesador.
+b) Débilmente acoplado.- Cuando cada uno de los procesos del sistema multiprocesador, no dependa casi 
+(por lo menos que dependen de algún otro proceso) de ningún otro proceso del sistema multiprocesador.
+
+9) En un DFS la replicación de archivos, es una redundancia útil. ¿En qué consiste y como debe ser implementado?
+Es una redundancia útil para mejorar la disponibilidad, el requisito básico es la réplica de un mismo archivo, 
+resida en maquinas independientes a cuanto fallo. La existencia de replica debe ser invisible para los niveles superiores, 
+no obstantes las replicas se deben distinguir entre sí con nombres de bajo nivel distintos.
+
+10) Para la exclusión mutua en DFS en que consisten las alternativas de algoritmos:
+a. Centralizados
+b. Distribuidos
+R.- a. Centralizados.- Es cuando se asigna a un nodo como nodo de control de acceso a todos los objetos que dependen de ese nodo, 
+el nodo control toma la decisión para la asignación de recursos a los que pueden acceder los demás nodos, toda la información
+ necesaria se guarda en el nodo de control.
+b. Distribuidos.- Es cuando cada nodo dispone de una representación parcial del sistema total y debe tomar decisiones en base a la sgte. Información:
+* Todos los nodos tienen responsabilidad igual en la decisión final.
+* Todos los nodos dedican igual esfuerzo por término medio.

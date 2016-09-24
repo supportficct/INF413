@@ -1,0 +1,31 @@
+1) Defina las características de una red local. Explique esas características en contraste con las de una red de largo alcance.
+R.- Las redes LAN generalmente cubren aéreas geográficamente pequeñas; sus enlaces de comunicación son más rápidos y con menor tasa de errores; se utilizan cables de alta calidad (fibra óptica, cable coaxial, par trenzado).
+En cambio una WAN permite una amplia comunidad de usuarios, comparten diferentes hardware y software de forma cómoda y económica. Internet es una red de redes que está compuesta de miles de computadoras. Por su amplia distribución geográfica los enlaces de comunicación son relativamente lentos y poco confiables, pueden ser líneas telefónicas, microondas y canales de satélites.
+En una LAN las configuraciones más comunes son: bus multiacceso, anillo, estrella. La velocidad de comunicación tiene un rango de 1 Mbps hasta 1 Gbps . Una LAN podría estar compuesta por varias computadoras diferentes desde computadoras hasta laptops que tienen periféricos y puertas de acceso a otras redes.
+En la WAN el uso de moden es imprescindible, la velocidad de transmisión varía entre 1200 bits por seg a 1 Mbps.
+
+2) Compare las diversas topologías de red en función de la confiabilidad
+R.- - En las redes totalmente conectadas la confiabilidad es mayor de bido a que todas las computadoras se encuentran conectadas y desde una computadora se puede transferir los datos a otra directamente sin ningún problema.
+- En las redes parcialmente conectadas la confiabilidad es menor porque si una computadora intenta enviar un mensaje a otra con la que no está conectada, entonces tendría que pasar por otros sitios intermedios para que llegue el mensaje.
+- En la topología anillo la confiabilidad es baja porque esta red es como un circuito cerrado ya que una computadora se encuentra conectada a otras dos si o si y si quiere enviar un mensaje a otra computadora que no sea la que está a su lado tendría que pasar por varios sitios intermedios.
+- En la Topología estrella la confiabilidad es mayor ya que todas las computadoras se encuentran conectadas a un servidor y si se  envía un mensaje el servidor se encarga de hacer llegar el mensaje al destino, la rapidez puede afectarse cuando el nodo central se convierte en un cuello de botella.
+- En la Topología bus Multiacceso la confiabilidad es baja por que todas las computadoras pasan mensajes a través de un bus en el que incluso se producen cuellos de botella.
+
+3) ¿Cuáles son los tres esquemas más comunes en las estrategias de conexión de redes, y cómo funcionan?
+R.- Los 3 esquemas más comunes son:
+1.- Conmutación de circuitos.- Consiste en el establecimiento de un enlace físico y permanente para la comunicación exclusiva entre dos procesos.
+2.- Conmutación de mensajes.- Consiste en la asignación temporal del enlace físico durante el tiempo de transferencia de mensaje entre dos procesos. Cada mensaje es un bloque de datos con información del sistema (como la fuente, el destino y códigos de detección de errores); es posible el envió de muchos mensajes por el mismo enlace (diferentes usuarios).
+3.- Conmutación de paquetes.- Cuando un mensaje lógico es grande es posible dividirse en varios paquetes y enviarlo por separado de acuerdo a las posibilidades por lo cual es necesario que cada paquete incluya dirección tanto de origen como destino. Además los datos al llegar al destino, los paquetes deben re ensamblarse.
+
+4) En los sistemas operativos distribuidos, están las alternativas: migración de datos, migración de cómputos y migración de procesos. ¿En cuál de ellas se aplica RPC y cómo funciona?
+R.- Se aplica RPC en la migración de cómputos. RPC realiza llamadas de procedimientos remotos, para un mejor desempeño se pueden usar caches como se hace en los sistemas de archivos convencionales. RPC se encarga de dividir procesos en sub procesos que pueden ocasionar conflictos.
+
+5) Compare el uso de cachés y el servicio remoto (RPC), en relación a:
+-	Consistencia del caché
+-	Acceso a segmentos de disco: contiguos vs aleatorios.
+R.-  - Consistencia del caché
+       *  Uso de cache.- Es una ventaja cuando hay patrones de acceso para escritura poco frecuente, es preferible el uso de cache. Pero con escritura frecuente el gasto extra es considerable en término de desempeño, trafico de red y carga del servidor.
+     * Servicio Remoto (RPC).- Puede ocasionar conflictos, ya que no tiene una buena política del uso de cache.
+      - Acceso a segmentos de disco: contiguos vs aleatorios.
+* Se debe tener disco locales de gran capacidad y memorias principales grandes o de lo contrario conviene el método de servicio remoto.
+* En el servidor pueden optimizarse para solicitudes de segmento grande y contiguo en lugar de bloques de disco aleatorio. 
