@@ -1,0 +1,12 @@
+
+if test $# -eq0
+	then
+	 echo "Debe proporcionar por lo menos un argumento"
+	exit 1	
+fi
+if test -f "$1"
+ then 
+ 	echo "$1 es un fichero normal en el directorio de trabajo" 
+ else
+	echo "$1 No es un fichero normal en el directorio de trabajo"
+fi

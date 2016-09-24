@@ -1,0 +1,107 @@
+[estudiante@localhost ~]$ cd..
+bash: cd..: no se encontró la orden...
+[estudiante@localhost ~]$ cd
+[estudiante@localhost ~]$ cd.
+bash: cd.: no se encontró la orden...
+[estudiante@localhost ~]$ host=$host:.
+[estudiante@localhost ~]$ ls
+abrt_checker_3642.log    Documentos  Imágenes    Público         workspace
+Descargas                Escritorio  Música      Vídeos
+Documento no guardado 1  GNS3        Plantillas  VirtualBox VMs
+[estudiante@localhost ~]$ ls Documentos
+GNS_IMAGES
+[estudiante@localhost ~]$ ls Imágenes
+Documento no guardado 1
+[estudiante@localhost ~]$ cd Imágenes
+[estudiante@localhost Imágenes]$ ls
+Documento no guardado 1
+[estudiante@localhost Imágenes]$ gedit Documento no guardado 1
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ LS
+bash: LS: no se encontró la orden...
+Una orden similar es: 'ls'
+[estudiante@localhost Imágenes]$ ls
+Documento no guardado 1
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ cd Documento no guardado1
+bash: cd: Documento: No existe el fichero o el directorio
+[estudiante@localhost Imágenes]$ cd Documento no guardado 1
+bash: cd: Documento: No existe el fichero o el directorio
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ HOST=$HOST:.
+[estudiante@localhost Imágenes]$ sh Documento no guardado 1.sh
+sh: Documento: No existe el fichero o el directorio
+[estudiante@localhost Imágenes]$ sh Documento no guardado 1.sh hola
+sh: Documento: No existe el fichero o el directorio
+[estudiante@localhost Imágenes]$ sh hola1.sh hola
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ ls
+Documento no guardado 1~  hola  hola1.sh
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ sh hola1.sh hola
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ gedit hola
+[estudiante@localhost Imágenes]$ gedit hola
+[estudiante@localhost Imágenes]$ gedit hola2
+[estudiante@localhost Imágenes]$ sh hola1.sh hola2
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola2 es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ ls
+Documento no guardado 1~  hola  hola1.sh  hola2
+[estudiante@localhost Imágenes]$ sh hola1.sh hola
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+casa No es un fichero normal en el directorio de trabajo
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+casa Existe y no es un fichero de directorio
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+casa No Existe y no es un fichero de directorio
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+casa No Existe y no es un fichero de directorio
+casa No Existe
+casa No Existe y no se puede leer
+[estudiante@localhost Imágenes]$ sh hola1.sh hola
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola es un fichero normal en el directorio de trabajo
+hola No Existe y no es un fichero de directorio
+hola Existe
+hola Existe y se puede leer
+[estudiante@localhost Imágenes]$ sh hola1.sh hola
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+hola es un fichero normal en el directorio de trabajo
+hola No Existe y no es un fichero de directorio
+hola Existe
+hola Existe y se puede leer
+hola Existe y tiene un tamaño mayor que 0 bytes
+hola Existe y se puede escribir
+hola No Existe y no se puede ejecutar
+[estudiante@localhost Imágenes]$ sh hola1.sh casa
+hola1.sh: línea 2: test: 1: se esperaba un operador unario
+casa No es un fichero normal en el directorio de trabajo
+casa No Existe y no es un fichero de directorio
+casa No Existe
+casa No Existe y no se puede leer
+casa No Existe y no tiene un tamaño mayor que 0 bytes
+casa No Existe y no se puede escribir
+casa No Existe y no se puede ejecutar
+[estudiante@localhost Imágenes]$ 
+
